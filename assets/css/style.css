@@ -1,0 +1,61 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'playfair display', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+nav ul li:not(.logo) {
+    padding: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 12rem;
+}
+
+nav ul li.logo img {
+    max-height: 175px;
+    width: auto;
+    margin-top: 0px;
+    position: relative;
+    top: -11px;
+    z-index: 2;
+}
+
+nav ul li.logo a {
+    display: inline-block; /* Isso permite que a logo seja centralizada corretamente */
+}
+
+nav ul li a {
+    font-size: 19px;
+    font-family: inter;
+    text-decoration: none;
+    color: #232323; /* Ou a cor que desejar */
+    font-weight: normal;
+}
+
+nav ul li.logo::after {
+    content: ''; /* Isso é necessário para gerar um pseudo-elemento */
+    display: block; /* Faz o pseudo-elemento se comportar como um bloco, permitindo definir largura e altura */
+    width: 100%; /* Isso fará a linha se estender pela largura total do contêiner da logo */
+    height: 1px; /* Isso define a espessura da linha */
+    background-color: #a9a9a9; /* Isso define a cor da linha, ajuste conforme necessário */
+    position: absolute; /* Isso tira o pseudo-elemento do fluxo normal do documento */
+    bottom: 825px; /* Isso posiciona a linha abaixo da logo, ajuste conforme necessário */
+    left: 0; /* Isso alinha a linha à esquerda do contêiner da logo */
+}
