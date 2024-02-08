@@ -125,17 +125,16 @@ html, body {
     opacity: 25%;
     position: absolute;
     top: 120%;
-    left: -15%;
+    left: -10%;
     z-index: -1;
-    height: 1100px;
+    height: 1200px;
 }
 
 .class-photo {
-=;
     padding: 0;
     margin: 0;
     height: 350px;
-    width: 1800px;
+    width: 1600px;
     position: absolute;
     right: 0%;
     top: 130%;
@@ -148,4 +147,90 @@ html, body {
     height: 350px;
     object-position: center right;
     opacity: 25%;
+}
+
+.text {
+    position: absolute;
+    top: 135%;
+    left: 40%;
+    font-family: 'Playfair Display', serif;
+}
+
+.text h2 {
+    font-size: 64px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.text h1 {
+    font-size: 96px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.paragraph {
+    width: 600px;
+    margin-top: 200px;
+    font-size: 30px;
+    word-spacing: 4px;
+    font-weight: 100;
+    color: rgb(70, 70, 70);
+}
+
+.rectangle {
+    background-color: #104B8D;
+    width: 660px;
+    height: 10px;
+    position: absolute;
+    top: 174%;
+    left: 37.5%;
+}   
+
+
+
+.background-class-photo img {
+    width: 2580px;
+    height: auto;
+    opacity: 25%;
+    position: absolute;
+    top: 250%;
+}
+
+.more {
+    position: absolute;
+    top: 280%;
+    left: 33%;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.more h2 {
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 200px;
+    color: #1d1d1d;
+}
+
+.more h1 {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 200px;
+    color: #1d1d1d;
+}
+
+.more button {
+    font-size: 1em;
+    color: #fff; 
+    background-color: #104B8D; 
+    border: none;
+    padding: 1em 2em; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+}
+
+.more button:hover {
+    background-color: #0D3A6E;
 }
