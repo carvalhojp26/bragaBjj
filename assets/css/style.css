@@ -493,3 +493,36 @@
     .submit-button button:hover {
         background-color: #0D3A6E;
     }
+
+    #map {
+        height: 500px;
+        width: 700px;
+        margin: 0 auto;
+        top: 90px;
+    }
+
+    .get-directions-btn {
+        display: flex;
+        font-size: 1em;
+        color: #fff; 
+        background-color: #104B8D; 
+        border: none;
+        padding: 1em 2em; 
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 15px;
+        border: none;
+        font-weight: bold;
+        font-weight: 500;
+        font-family: 'Inter', serif;
+    }
+
+    .get-directions-btn:hover {
+        background-color: #0D3A6E;
+    }
+
+    .get-directions {
+        display: flex;
+        justify-content: center;
+        margin-top: 150px
+    }
