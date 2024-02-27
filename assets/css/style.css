@@ -67,7 +67,7 @@
         text-align: center;
         color: #232323;
         font-family: 'Playfair Display', serif;
-    }
+    }   
 
     .centralized-text-container h1 {
         font-size: 3em; 
@@ -121,7 +121,7 @@
     .background-photo2 img {
         opacity: 25%;
         position: absolute;
-        top: 120%;
+        top: 1100px;
         left: -10%;
         z-index: -1;
         height: 1200px;
@@ -134,7 +134,7 @@
         width: 1600px;
         position: absolute;
         right: 0%;
-        top: 130%;
+        top: 1220px;
         overflow: hidden;
     }
 
@@ -146,10 +146,19 @@
         opacity: 25%;
     }
 
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1500px; 
+    }
+
     .text {
-        position: absolute;
-        top: 135%;
-        left: 40%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         font-family: 'Playfair Display', serif;
     }
 
@@ -179,22 +188,27 @@
         width: 660px;
         height: 10px;
         position: absolute;
-        top: 174%;
-        left: 37.5%;
-    }   
+        top: 1600px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }  
 
     .background-class-photo img {
-        width: 2580px;
-        height: auto;
+        width: 100%;
+        height: 100%;
         opacity: 25%;
+        object-fit: cover;
         position: absolute;
-        top: 250%;
+        top: 2900px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .more {
         position: absolute;
-        top: 280%;
-        left: 33%;
+        top: 3000px;
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-align: center;
         font-family: 'Playfair Display', serif;
     }
@@ -224,6 +238,7 @@
         border-radius: 15px;
         border: none;
         font-weight: bold;
+        width: 180px;
     }
 
     .more button:hover {
@@ -373,10 +388,10 @@
     .main-container {
         width: 80%;
         max-width: 1200px; 
-        position: relative; 
-        z-index: 1;
         height: 650px;
+        z-index: 1;
         display: flex;
+        justify-content: center;
     }
     
     .background-image img {
@@ -422,22 +437,6 @@
         background-color: #f9f9f9;
         width: 650px;
         opacity: 0.7;
-    }
-
-    .instagram-icon img {
-        width: 50px;
-        height: auto;
-        opacity: 1;
-        margin-top: 49%;
-        margin-left: 2%;
-    }
-    
-    .facebook-icon img {
-        width: 50px;
-        height: auto;
-        opacity: 1;
-        margin-top: 49%;
-        margin-left: 6%;
     }
 
     .contact-container {
@@ -496,7 +495,7 @@
 
     #map {
         height: 500px;
-        width: 700px;
+        width: 1000px;
         margin: 0 auto;
         top: 90px;
     }
@@ -525,4 +524,547 @@
         display: flex;
         justify-content: center;
         margin-top: 150px
+    }
+
+    @media (max-width: 2228px) {
+        .class-photo {
+            width: 1430px
+        }
+    }
+
+    @media (max-width: 2036px) {
+        .class-photo {
+            width: 1350px;
+        }
+
+        .background-photo2 img {
+            height: 1000px;
+            top: 130%;
+        }
+
+
+    }
+
+    @media (max-width: 1848px) {
+        .class-photo {
+            width: 1230px;
+        }
+
+        .text h2 {
+            font-size: 50px;
+
+        }
+
+        .text h1 {
+            font-size: 85px;
+        }
+
+        .text p {
+            font-size: 27px;
+        }
+    }
+
+    @media (max-width: 1714px) {
+        .class-photo {
+            height: 250px;
+            width: 1100px;
+        }
+
+        .rectangle {
+            top: 1500px;
+            width: 485px;
+        }
+        
+        .container {
+            height: 1200px;
+
+        }
+
+        .text h2 {
+            font-size: 40px;
+        }
+
+        .text h1 {
+            font-size: 70px;
+        }
+
+
+        .paragraph {
+            margin-top: 100px;
+        }
+
+        .text p {
+            font-size: 23px;
+            width: 500px;
+            margin: auto;
+
+        }
+
+        .background-photo2 img {
+            left: -15%;
+        }
+
+        .more {
+
+            top: 3000px;
+        }
+    
+        .more h2 {
+            font-size: 44px;
+        }
+    
+        .more h1 {
+            font-size: 60px;
+        }
+    
+        .more button {
+            font-size: 1em;
+            width: 160px;
+        }
+    }
+
+    @media (max-width: 1426px) {
+        .class-photo {
+            height: 200px;
+            width: 930px;
+        }
+
+        .rectangle {
+            top: 1450px;
+            width: 435px;
+            height: 7px;
+        }
+        
+        .container {
+            height: 1100px;
+
+        }
+
+        .text h2 {
+            font-size: 35px;
+        }
+
+        .text h1 {
+            font-size: 65px;
+        }
+
+        .text p {
+            font-size: 20px;
+            width: 450px;
+        };
+
+        .background-class-photo img {
+            top: 2700px;
+        }
+
+        .more {
+            top: 2750px;
+        }
+
+        .background-photo img {
+            right: -25%;
+            height: 1000px;
+        }
+
+        .background-photo2 img {
+            top: 1150px;
+            left: -15%;
+            height: 1000px;
+        }
+    }
+
+    @media (max-width: 1286px) {
+        .class-photo {
+            height: 200px;
+            width: 800px;
+        }
+
+        .rectangle {
+            top: 1450px;
+            width: 315px;
+            height: 7px;
+        }
+        
+        .container {
+            height: 1150px;
+
+        }
+
+        .text h2 {
+            font-size: 30px;
+        }
+
+        .text h1 {
+            font-size: 55px;
+        }
+
+        .text p {
+            font-size: 19px;
+            width: 350px;
+        };
+
+        .background-class-photo img {
+            top: 2700px;
+        }
+
+        .more {
+            top: 2750px;
+        }
+
+        .background-photo img {
+            right: -30%;
+            height: 1000px;
+        }
+
+        .background-photo2 img {
+            top: 1150px;
+            left: -25%;
+            height: 900px;
+        }
+
+        .more h2 {
+            font-size: 35px;
+            margin-bottom: 100px;
+        }
+
+        .more h1 {
+            font-size: 43px;
+            margin-bottom: 100px;
+        }
+
+        .main-container {
+            max-width: 1200px; 
+            height: 420px;
+        }
+    
+        .getInContact {
+            width: 300px;
+        }
+    
+        .getInContact h1 {
+            font-size: 60px;
+        }
+    
+        .getInContact p {
+            font-size: 12px;
+            width: 250px;
+            margin: 0 auto;
+        }
+    
+        .contact-container {
+            width: 480px;
+        }
+    
+        .contact-inputs {
+            width: 300px;
+            height: 30px;
+            padding-left: 20px;
+            margin: 10px;
+        }
+        .message textarea {
+            height: 200px;
+            padding-top: 15px;
+        }
+    
+        .contact-inputs:focus {
+            border: 2px solid #0D3A6E;
+        }
+    
+        .contact-container .submit-button {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .submit-button button {
+            font-size: 0.8em;
+        }
+    }
+
+    @media (max-width: 1006px) {
+
+        .centralized-text-container h1 {
+            font-size: 2em; 
+            margin-top: 5em;
+        }
+
+        .centralized-text-container h2 {
+            font-size: 5em; 
+        }
+
+        .centralized-text-container h3 {
+            font-size: 2em;
+        }
+
+        .background-photo img {
+            right: -30%;
+            height: 800px;
+        }
+
+        .class-photo {
+            height: 200px;
+            width: 660px;
+            top: 1000px;
+        }
+
+        .background-photo2 img {
+            top: 850px;
+            left: -31%;
+            height: 800px;
+        }
+
+        .container {
+            height: 1050px;
+        }
+
+        .rectangle {
+            top: 1250px;
+            width: 300px;
+        }
+
+        .background-class-photo img {
+            top: 2200px;
+        }
+
+        .more {
+            top: 2250px;
+        }
+
+        #map {
+            height: 400px;
+            width: 600px;
+            margin: 0 auto;
+            top: 90px;
+        }
+    
+    }
+
+    @media (max-width: 922px) {
+        .navbar {
+            height: 80px; 
+        }
+    
+        .navbar a {
+            font-size: 15px;
+        }
+
+    
+        .logo-container img {
+            height: 160px; 
+            width: auto;
+            margin-top: -15px;
+        }
+
+        .background-photo2 img {
+            display: none;
+        }
+
+        .class-photo {
+            width: 100%;
+        }
+
+        .more h1 {
+            font-size: 35px;
+        }
+
+        .more h2 {
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 752px) {
+        .more h1 {
+            font-size: 45px;
+        }   
+
+        .more {
+            top: 2100px;
+        }
+
+        .background-class-photo img {
+            top: 2000px;
+        }
+
+        .main-container {
+            max-width: 1200px; 
+            height: 350px;
+        }
+    
+        .getInContact {
+            width: 150px;
+        }
+    
+        .getInContact h1 {
+            padding-top: 20px;
+            font-size: 30px;
+        }
+    
+        .getInContact p {
+            display: none;
+        }
+    
+        .contact-container {
+            width: 300px;
+        }
+    
+        .contact-inputs {
+            width: 200px;
+            height: 30px;
+            padding-left: 20px;
+            margin: 10px;
+        }
+        .message textarea {
+            height: 150px;
+            padding-top: 15px;
+        }
+    
+        .submit-button button {
+            font-size: 0.7em;
+        }
+    }
+
+    @media (max-width: 598px) {
+        .navbar {
+            height: 60px; 
+        }
+    
+        .navbar a {
+            font-size: 12px;
+        }
+
+    
+        .logo-container img {
+            height: 120px; 
+            width: auto;
+            margin-top: -11px;
+        }
+
+        .rectangle {
+            top: 1220px;
+        }
+        
+        .background-photo img {
+            display: none;
+        }
+
+        .class-photo {
+            top: 980px;
+        }
+
+        .more h1 {
+            font-size: 30px;
+        }
+
+        .more h2 {
+            font-size: 25px;
+        }
+
+        .background-photo img {
+            right: -60%;
+            height: 700px;
+        }
+
+        #map {
+            height: 400px;
+            width: 375px;
+            margin: 0 auto;
+            top: 90px;
+        }
+    
+        .get-directions-btn {
+            font-size: 0.8em;
+            padding: 1em 2em; 
+        }
+
+        .schedule-title h1 {
+            height: 150px;
+            font-size: 70px;
+        }
+
+        .rectangle-2 {
+            top: 250px;
+            width: 300px;
+        }
+
+        td:nth-child(1), th {
+            background-color: #305783;
+            font-weight: bold;
+            font-size: 18px;
+            color: #fff;
+            font-family: 'Inter', serif;
+        }
+
+        .aboutUs-title h1 {
+            font-size: 40px;
+        }
+    
+        .rectangle-3 {
+            width: 350px;
+            top: 260px;
+        }
+        
+        .aboutUs-btn {
+            width: 300px;
+        }
+
+        #moving-btn {
+            width: 150px;
+        }
+    
+        .present-text {
+            width: 300px;
+            font-size: 17px;
+        }
+    
+        .past-text {
+            width: 300px;
+            font-size: 17px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .navbar {
+            height: 50px; 
+        }
+    
+        .navbar a {
+            font-size: 10px;
+        }
+
+    
+        .logo-container img {
+            height: 100px; 
+            width: auto;
+            margin-top: -9px;
+        }
+
+        .background-photo img {
+            display: none;
+        }
+
+        .rectangle {
+            top: 1180px;
+        }
+        
+        .class-photo {
+            top: 960px;
+        }
+
+        .more h1 {
+            font-size: 25px;
+        }
+
+        .more h2 {
+            font-size: 20px;
+        }
+
+        .background-photo img {
+            right: -70%;
+            height: 600px;
+        }
+        
+        .more button {
+            width: 140px;
+            height: 50px;
+            font-size: 0.8em;
+        }
     }
