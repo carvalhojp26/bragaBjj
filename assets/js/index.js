@@ -9,9 +9,15 @@ function leftClick() {
 }
 
 function rightClick() {
-    btn.style.left = '200px';
-    presentText.style.display = 'none'; 
-    pastText.style.display = 'block'; 
+    if (window.matchMedia("(max-width: 598px)").matches) {
+        btn.style.left = '150px';
+        presentText.style.display = 'none'; 
+        pastText.style.display = 'block'; 
+    } else {
+        btn.style.left = '200px';
+        presentText.style.display = 'none'; 
+        pastText.style.display = 'block'; 
+    }
 }
 
 document.addEventListener('DOMContentLoaded', leftClick);
@@ -23,7 +29,7 @@ function initMap() {
         center:{lat:41.53, lng:-8.41},
         zoom:13
     });
-    directionsRenderer.setMap(map); // Associa o DirectionsRenderer ao mapa
+    directionsRenderer.setMap(map);
     google.maps.event.addListener(map, "click", function(event){
         this.setOptions({scrollWheel:true});
     });
@@ -33,7 +39,6 @@ let directionsService = new google.maps.DirectionsService();
 let directionsRenderer = new google.maps.DirectionsRenderer();
 
 function getLocation() {
-    //inicializada quando aperta o botao
     navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 }
 
@@ -42,8 +47,7 @@ const successCallback = (position) => {
     
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    
-    // Chama compareDistance 
+
     compareDistance(latitude, longitude);
 };
 
